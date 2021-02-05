@@ -1,5 +1,5 @@
 import requests, json, sys
-# fill the your cookie and token
+# fill your cookie and token
 
 class Instagram:
 	_session	= requests.session()
