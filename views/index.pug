@@ -1,0 +1,38 @@
+extends global
+append styles
+	link(href='/assets/bootstrap/dist/css/jumbotron.css', rel='stylesheet')
+block body
+	.container
+		.header.clearfix
+			nav
+				ul.nav.nav-pills.pull-right
+					li.active(role='presentation')
+						a(href='/') Beranda
+					li(role='presentation')
+						a(href='/about-us') Tentang Kami
+					li(role='presentation')
+						a(href='/api') API
+			h3.text-muted
+				a(href='/')
+					img(src='/assets/images/logo.png', height='40')
+		.jumbotron
+			h2#question-title(style='display: none;') Social Currency
+			p.lead#question-text
+				script
+					| document.write('Hey-ho!');
+				noscript
+					| Hidupkan JavaScript anda
+			p#question-button(style='display: none;')
+				| #[a.btn.btn-primary(href='javascript:;', role='button') Proses] #[a.btn.btn-danger(href='javascript:window.location.href=location.href;', role='button') Tutup]
+		.row.about
+			.col-md-6
+				h4
+					| Data Mining 
+				p
+					| Klop menambang data secara otomatis pada aktivitas user Instagram untuk mendapatkan hasil nilai yang mendekati.
+			.col-md-6
+				h4 Algoritma
+				p
+					| Klop menganalisa beberapa parameter dari user Instagram dengan harga saham Facebook (FB) dan kurs mata uang USD.
+		footer.footer
+			p &copy; 2021 Klop &bullet; Powered by Instagram

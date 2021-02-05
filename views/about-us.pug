@@ -1,0 +1,34 @@
+extends global
+append styles
+	link(href='/assets/bootstrap/dist/css/jumbotron.css', rel='stylesheet')
+block body
+	.container
+		.header.clearfix
+			nav
+				ul.nav.nav-pills.pull-right
+					li(role='presentation')
+						a(href='/') Beranda
+					li.active(role='presentation')
+						a(href='/about-us') Tentang Kami
+					li(role='presentation')
+						a(href='/api') API
+			h3.text-muted
+				a(href='/')
+					img(src='/assets/images/logo.png', height='40')
+		.row.about
+			h3(style='margin-top: -10px') 
+			.col-md-12
+				h4 Tentang Klop
+				.row
+					.col-md-2
+						img.img-circle(src='/assets/images/fadhiilrachman.jpg', width='100', height='100')
+					.col-md-8
+						p
+							| Pembuat melihat perkembangan sosial media terus meningkat, terutama pada pasar yang dapat dibuat dan dikontrol. Maka dari itu klop salah satu acuan yang dapat menghitung nilai pengaruh seseorang dengan akun Instagram yang dimiliki.
+						p
+							a(href='https://www.instagram.com/fadhiilrachman/') Instagram
+							| 
+							| &bullet; 
+							a(href='https://github.com/fadhiilrachman') Github
+		footer.footer
+			p &copy; 2021 Klop &bullet; Powered by Instagram

@@ -1,0 +1,32 @@
+extends global
+append styles
+	link(href='/assets/bootstrap/dist/css/jumbotron.css', rel='stylesheet')
+block body
+	.container
+		.header.clearfix
+			nav
+				ul.nav.nav-pills.pull-right
+					li(role='presentation')
+						a(href='/') Beranda
+					li(role='presentation')
+						a(href='/about-us') Tentang Kami
+					li.active(role='presentation')
+						a(href='/api') API
+			h3.text-muted
+				a(href='/')
+					img(src='/assets/images/logo.png', height='40')
+		.row.api
+			h3(style='margin-top: -10px') 
+			.col-md-12
+				h4 API for Analyze
+				p
+					| Endpoint: 
+					code /api/analyze
+				p
+					| Method: POST
+					br
+					| Request:
+					br
+					| u = Your Instagram username
+		footer.footer
+			p &copy; 2021 Klop &bullet; Powered by Instagram
